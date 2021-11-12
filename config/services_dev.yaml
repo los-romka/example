@@ -1,0 +1,9 @@
+parameters:
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    App\Service\CalculatorInterface:
+        alias: 'App\Service\CalculatorV2'
