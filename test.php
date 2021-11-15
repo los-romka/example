@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use App\Locator\ServiceLocator;
 
-require_once __DIR__ . 'vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 $serviceLocator = new ServiceLocator();
 $serviceLocator->set('service', new \App\Service\MyCustomService((string)$_ENV['APP_ENV'], (string)$_ENV['MY_CUSTOM_ENV']));
